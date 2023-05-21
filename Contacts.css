@@ -10,6 +10,15 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+.title {
+  color: #ffc107;
+  font-size: 60px;
+  position: relative;
+  animation: slide 1s linear;
+  text-align: center;
+  text-shadow: 1px 1px 1px gray, 1px 2px 1px gray, 1px 3px 1px gray,
+    1px 4px 1px gray, 1px 5px 1px gray;
+}
 .header {
   color: #ffc107;
   position: relative;
@@ -48,11 +57,28 @@ h3 {
   color: white;
 }
 .lower {
-  color: #ffc107;
-  font-size: 30px;
-  background-color: white;
+  color: black;
+  font-size: 40px;
+  background-color: #ffc107;
   text-align: center;
   border-radius: 100px;
+  width: 300px;
+  font-family: cursive;
+  border-style: dotted;
+}
+.lower2 {
+  color: black;
+  font-size: 20px;
+  background-color: #ffc107;
+  text-align: center;
+  border-radius: 100px;
+  font-family: cursive;
+  text-decoration: none;
+  padding: 10px;
+  border: solid white;
+}
+a:hover {
+  color: red;
 }
 
 .circle-container {
