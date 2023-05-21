@@ -17,15 +17,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-    <title>Pofile</title>
+    <title>Profile</title>
 
-    <!-- provides for sliding animation -->
-    <script> 
-      var textElement = document.querySelector(".sliding-text");
-      textElement.addEventListener("animationend", function () {
-        textElement.style.animationPlayState = "paused";
-      });
-    </script>
   </head>
 
   <body>
@@ -39,12 +32,12 @@
           <div class="row">
           </div>
           
-          <!-- For the Icons -->
+          <!-- For the Icons on the right -->
           <div class="col-sm-12"></div>
           <div class="sidenav">
             <ul type="none">
             <li><a href= "..\Main.html"><i class="bi bi-house-door"></i></a></li>
-            <li><a href= ""><i class="bi bi-person-circle"></i></a></li>
+            <li><a href= "..\Profile.html"><i class="bi bi-person-circle"></i></a></li>
             <li><a href= "..\Acads.html"><i class="bi bi-book"></i></a></li>
             <li><a href= "..\Contact.html"><i class="bi bi-telephone"></i></a></li>
           </div>
@@ -56,7 +49,7 @@
               <img id="image"src="pic.jpg" alt="Avatar" style="width:450px">
             </div>
 
-            <!-- Content  -->
+            <!-- Contents  -->
             <div class="col-md-6">
              
               <div class="row">
@@ -113,7 +106,7 @@
           
            <div class="SKILLS">
           <div class="row" id="skills">
-            <h1 class="title" b>MY SKILLS</b></h1>
+            <h1 class="title" ><b>MY SKILLS</b></h1>
             <br />
             <br />
          
@@ -181,18 +174,47 @@
                 A tendency of particular cognitive experiences to provoke
                 laughter and provide amusement
               </p>
-      
-          
-            
             </div>
-            
           </div>
-          
         </div>
-        
       </div>
+    </div>
 
-        
+    <div class="title">
+      <div class="header"><b> FAVORITES</b></div>
+      </div>
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col">
+        <div id="twice-content">
+        <p>This is <b>Twice</b></p>
+        <p>My Favorite KPOP girl group</p>
+        <p>Twice often presents a relatable and approachable image, which resonates with many fans. They are known for their friendly and cheerful personalities, and their content often shows their playful and fun interactions with each other.</p>
+        </div>
+        </div>
+
+<!-- PhotoCard with flip effect -->
+        <div class="col">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <!-- Front content -->
+                <div class="image-container">
+                  <img src="twice2.jpg" alt="Back Side Image" class="back-image">
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <!-- Back content -->
+                <div class="image-container">
+                  <img src="Twice.jpg" alt="Back Side Image" class="back-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
