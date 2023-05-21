@@ -1,13 +1,14 @@
 body {
+  font-family: Arial, sans-serif;
   background-image: url(BACKGROUND.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  display: inline-block;
   position: relative;
   animation: slide 1s linear;
-  color: #ffc107;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -22,7 +23,6 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 300%;
   padding-left: 20px;
-  
 }
 
 #career {
@@ -48,13 +48,6 @@ body {
   border-radius: 20px;
   box-shadow: 10px 13px 5px;
 }
-
-li {
-  float: right;
-  padding-top: 75px;
-  margin-right: 10px; /* Adjust the margin between icons */
-}
-
 li a {
   display: block;
   font-size: 40px;
@@ -66,18 +59,45 @@ li a {
   border-radius: 100px;
   padding-bottom: 6px;
 }
-
 li a:hover {
   color: #ffc107;
 }
+.sidenav {
+  float: right;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding-top: 100px;
+}
 
+.sidenav a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.sidenav a:hover {
+  color: #ffc107;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* For the animation */
 @keyframes slide {
   100% {
     left: 0;
   }
   0% {
-    left: calc(
-      100% - 50%
-    ); /* Adjust the value to match your desired end position */
+    left: calc(100% - 50%);
   }
-} */
+}
