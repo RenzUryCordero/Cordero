@@ -66,17 +66,7 @@ h3 {
   font-family: cursive;
   border-style: dotted;
 }
-.lower2 {
-  color: black;
-  font-size: 20px;
-  background-color: #ffc107;
-  text-align: center;
-  border-radius: 100px;
-  font-family: cursive;
-  text-decoration: none;
-  padding: 10px;
-  border: solid white;
-}
+
 a:hover {
   color: red;
 }
